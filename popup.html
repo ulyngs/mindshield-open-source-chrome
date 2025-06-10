@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="popup.css">
+    <script src="shared_data.js"></script>
     <script type="module" src="popup.js"></script>
 </head>
 <body>
+    <!-- Error Prompt -->
+    <div id="error-prompt">
+        <p style="font-style: italic;">Loading settings... <br/>If settings do not show, close Chrome fully</a> and open it again.</p>
+    </div>
+    
     <!-- Review Prompt -->
     <div id="reviewPrompt" style="display: none;">
         <div class="review-prompt-content">
             <p>Enjoying the extension? Take a moment to rate or review us!</p>
-            <a href="https://apps.apple.com/gb/app/mindshield/id1660218371" target="_blank" class="review-link">Leave a Review</a>
+            <a href="https://chromewebstore.google.com/detail/mindshield-hide-distracti/hhblkhfdjijdinijakbmcpkmdfhoadcd" target="_blank" class="review-link">Leave a Review</a>
             <button id="noThanksButton">No, thanks / I already did!</button>
         </div>
     </div>
@@ -483,7 +489,7 @@
                  </div>
             </div>
 
-            <!-- NEW: Bottom row for Sites and Suggestions -->
+            <!-- Bottom row for Sites and Suggestions -->
             <div class="footer-bottom-row">
                 <!-- "Sites" Accordion (Moved here) -->
                 <div id="what-sites">
@@ -512,7 +518,7 @@
                     </ul>
                 </div>
 
-                <!-- Suggestions Link (Moved here with Icon) -->
+                <!-- Suggestions Link -->
                 <div class="suggestions-link">
                     <a href="https://github.com/ulyngs/mindshield-open-source/issues" target="_blank">
                         <!-- GitHub Icon SVG -->
@@ -523,6 +529,6 @@
             </div>
         </footer>
 
-    </div> <!-- End popup-content -->
+    </div>
 </body>
 </html>
